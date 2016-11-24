@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My2048 1.0</title>
+    <link rel="stylesheet" type="text/css" href="css/My2048.css">
+    <script src="js/My2048.js"></script>
+</head>
+<body>
+<div id="score"><span>Score:</span><b id="score_main">0</b></div>
+<div id="bg_grid">
+
+    <!--背景-->
+
+    <div id="g00" class="bg"></div>
+    <div id="g01" class="bg"></div>
+    <div id="g02" class="bg"></div>
+    <div id="g03" class="bg"></div>
+
+    <div id="g10" class="bg"></div>
+    <div id="g11" class="bg"></div>
+    <div id="g12" class="bg"></div>
+    <div id="g13" class="bg"></div>
+
+    <div id="g20" class="bg"></div>
+    <div id="g21" class="bg"></div>
+    <div id="g22" class="bg"></div>
+    <div id="g23" class="bg"></div>
+
+    <div id="g30" class="bg"></div>
+    <div id="g31" class="bg"></div>
+    <div id="g32" class="bg"></div>
+    <div id="g33" class="bg"></div>
+
+    <!--前景-->
+
+    <div id="b00" class="ceil"></div>
+    <div id="b01" class="ceil"></div>
+    <div id="b02" class="ceil"></div>
+    <div id="b03" class="ceil"></div>
+
+    <div id="b10" class="ceil"></div>
+    <div id="b11" class="ceil"></div>
+    <div id="b12" class="ceil"></div>
+    <div id="b13" class="ceil"></div>
+
+    <div id="b20" class="ceil"></div>
+    <div id="b21" class="ceil"></div>
+    <div id="b22" class="ceil"></div>
+    <div id="b23" class="ceil"></div>
+
+    <div id="b30" class="ceil"></div>
+    <div id="b31" class="ceil"></div>
+    <div id="b32" class="ceil"></div>
+    <div id="b33" class="ceil"></div>
+
+    <div class="zz"></div>
+    <div class="final">
+        <div class="f_text">游戏结束</div>
+        <div class="f_bt">
+            <p id="again">再来一局</p>
+            <p id="no_play" onclick="window.open('','_self').close()">不玩了！</p>
+        </div>
+    </div>
+</div>
+<div id="obt">
+    <b id="go">新的游戏</b>
+</div>
+</body>
+</html>

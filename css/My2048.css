@@ -1,0 +1,189 @@
+/*得分界面*/
+#score{
+    width: 450px;
+    margin: 20px auto;
+}
+/*主界面*/
+#bg_grid{
+    width: 450px;
+    height: 450px;
+    background-color: #b8af9e;
+    margin: 10px auto;
+    border-radius: 10px;
+    position: relative;
+
+}
+#score span,b{
+    font-family: "Microsoft Yahei";
+    font-size: 24px;
+    font-weight: 900;
+}
+.bg,.ceil{
+    width: 100px;
+    height: 100px;
+}
+.bg{
+    background-color:#ccc0b2;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+.ceil{
+    position: absolute;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 100px;
+    text-align: center;
+    color:#fff;
+    font-family: "Microsoft Yahei";
+}
+#b00,#b01,#b02,#b03{top:10px}
+#b10,#b11,#b12,#b13{top:120px}
+#b20,#b21,#b22,#b23{top:230px}
+#b30,#b31,#b32,#b33{top:340px}
+
+#b00,#b10,#b20,#b30{left:10px}
+#b01,#b11,#b21,#b31{left:120px}
+#b02,#b12,#b22,#b32{left:230px}
+#b03,#b13,#b23,#b33{left:340px}
+
+.n2{background-color:#EEE4DA;color: #7C736A;}
+.n4{background-color:#ECE0C8;color: #7C736A;}
+.n8{background-color: #ecaa73;}
+.n16{background-color:#ec8261;}
+.n32{background-color: #ec623d;}
+.n64{background-color: #ec4c00;}
+.n128{background-color: #ec2b00;}
+.n256{background-color: #ec0032;}
+.n512{background-color: #ec007d;}
+.n1024{background-color: #ecba00;}
+.n2048{background-color: #ece700;}
+.n4096{background-color: #ec00ca;}
+.n8192{background-color: #ad00ec;}
+.n1024,.n2048,.n4096,.n8192{font-size: 36px;}
+
+.hfd{
+    animation: hfd 0.1s linear;
+}
+@keyframes hfd {
+    from{transform: scale(1,1)}
+    50%{transform: scale(1.2,1.2)}
+    to{transform: scale(1,1)}
+}
+
+@keyframes moveX1{
+    from{transform: translateX(0)}
+    to{transform: translateX(-110px)}
+}
+@keyframes moveX2{
+    from{transform: translateX(0)}
+    to{transform: translateX(-220px)}
+}
+@keyframes moveX2{
+    from{transform: translateX(0)}
+    to{transform: translateX(-330px)}
+}
+
+
+@keyframes fd {
+    from{transform: scale(0.1,0.1)}
+    to{transform: scale(1,1)}
+}
+.n2fd{
+    background: #EEE4DA;
+    color: #7C736A;
+    animation: fd 0.2s linear;
+}
+.n4fd{
+    background: #ECE0C8;
+    color: #7C736A;
+    animation: fd 0.2s linear;
+}
+/*游戏结束画面样式*/
+.final{
+    display: none;
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    line-height: 220px;
+    text-align: center;
+    font-size: 50pt;
+    font-weight: bold;
+    font-family:"Microsoft Yahei" ;
+    border-radius: 10px;
+    padding: 5px;
+    top: 0;
+    left: 0;
+}
+.f_text{
+    height: 220px;
+    color: #d0eaff;
+}
+.f_bt{
+    height: 220px;
+    line-height: 50px;
+}
+.final p{
+    display: block;
+    width: 150px;
+    font-size: 25pt;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 auto 25px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #3f94ff;
+    opacity:0.8;
+    cursor: pointer;
+}
+.final p:hover{
+    background: #ff5896;
+}
+.zz{
+    position: absolute;
+    background: #64524d;
+    width: 440px;
+    height: 440px;
+    opacity: 0;
+    padding: 5px;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+}
+.cx{
+    animation: cx 0.1s linear;
+    animation-fill-mode:forwards ;
+}
+@keyframes cx {
+    from{opacity:0;transform: scale(0.1,0.1)}
+    to{opacity:0.5;transform: scale(1,1)}
+}
+.cx1{
+    animation: cx1 0.1s linear;
+    animation-fill-mode:forwards ;
+}
+@keyframes cx1 {
+    from{opacity:0;transform: scale(0.1,0.1)}
+    to{opacity:1;transform: scale(1,1)}
+}
+/*新的游戏界面*/
+#obt{
+    width: 450px;
+    height: 200px;
+    margin: 50px auto;
+}
+#obt b{
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    margin: 0 auto;
+    background: #ff8508;
+    color: #fff;
+}
+b:hover{
+    background: #00CCFF;
+}
