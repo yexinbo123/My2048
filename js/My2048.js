@@ -1,6 +1,4 @@
-/**
- * Created by Administrator on 2016/10/13.
- */
+/** * Created by Administrator on 2016/10/13.*/
 var game={
     data:null,
     dh:null,
